@@ -1,219 +1,309 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calero Celeste DMM2AP</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/Icono.svg" type="image/svg+xml">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harbour Tower</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="Resources/Icon Harbour.svg" type="image/svg">
+
 </head>
 
 <body>
 
-    <!-- HEADER: Solo logo centrado -->
-    <header class="header-mointses">
-        <div class="contenedor">
-            <a href="#" class="logo-central">
-                <img src="img/Logo.svg" alt="Logotipo Mointses Outdoor">
-            </a>
-        </div>
-    </header>
+<header id="inicio" class="hero">
 
-    <main>
-        <!-- BLOQUE 1: Banner Principal Hero -->
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark hero-nav" aria-label="Navegación principal">
+
+<div class="container-fluid page-gutter">
+    <a class="navbar-brand" href="#inicio">
+        <img src="Resources/Harbour Tower Logo.svg" alt="Harbour Tower — Inicio" class="logo-nav">
+    </a>
+
+   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+    <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="menu">
+    <ul class="navbar-nav ms-auto">
+    <li class="nav-item">
+        <a class="nav-link" href="#residencias">Residencias</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#proyecto">Proyecto</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#amenities">Amenities</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#experiencia">Experiencia</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#contacto">Contacto</a>
+    </li>
+   </ul>
+   </div>
+</div>
+
+</nav>
+
+<!-- PORTADA VIDEO -->
+
+ <div class="hero-media">
+  <video id="video-portada" class="hero-image" autoplay muted loop playsinline preload="auto" aria-label="Video de presentación de Harbour Tower">
+   <source src="Resources/HarbourTowerVirtualTour.mp4" type="video/mp4">
+  </video>
+ </div>
+ 
+ <button id="control-video" class="video-toggle" type="button" aria-controls="video-portada" aria-label="Pausar video de portada">Pausar video</button>
+
+<!-- TITULO -->
+
+ <div class="hero-title">
+    <h1>Harbour<br>Tower</h1>
+</div>
+
+ <p class="hero-caption">
+    Vivir en las alturas. <br> Con la mejor vista de Buenos Aires
+</p>
+ <a class="hero-down" href="#residencias" aria-label="Explorar residencias">↓</a>
+</header>
+
+<!-- MAIN -->
+<main>
+
+<!-- SECCION RESIDENCIAS -->
+<section id="residencias" class="section-space">
+ <div class="container-fluid page-gutter">
+  <p class="eyebrow">RESIDENCIAS</p><h2 class="display-title intro-title">Buenos Aires 360°</h2>
+  <div class="row g-4 align-items-start editorial-pair"><div class="col-9 col-md-8">
+    <img src="Resources/Residencia360.webp" alt="Patio ajardinado de la referencia" class="w-100" loading="lazy"></div><div class="col-3 col-md-3 offset-md-1">
+        <img src="Resources/Residencia4v2.webp" alt="Detalle arquitectónico de la referencia" class="w-100" loading="lazy"></div></div>
+ 
+<!-- PARRAFO ARQUITECTO -->
+
+  <figure class="quote"><blockquote>“Más que un edificio, se pretende lograr una escultura a gran escala que marque un hito de diseño urbano y transforme el
+skyline de la ciudad para siempre.”</blockquote>
+<figcaption>ARQUITECTO CARLOS OTT</figcaption>
+</figure>
+ </div>
+
+<!-- CARROUSEL DE IMAGENES DE RESIDENCIAS -->
+
+ <div id="galeria-residencias" class="carousel slide full-photo" aria-label="Galería de residencias">
+ <div class="carousel-inner">
+  <div class="carousel-item active"><img src="Resources/Residenciav2.webp" alt="Living panorámico de la referencia" class="gallery-image" loading="lazy"></div>
+  <div class="carousel-item"><img src="Resources/Residencia2v2.webp" alt="Living panorámico de la referencia" class="gallery-image" loading="lazy"></div>
+ </div>
+ <button class="carousel-control-prev" type="button" data-bs-target="#galeria-residencias" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+ <button class="carousel-control-next" type="button" data-bs-target="#galeria-residencias" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span></button>
+</div>
+    <div class="container-fluid page-gutter"><h2 class="display-title section-heading">Lujo, calidez y elegancia para los más exigentes<br class="d-none d-lg-block"> </h2><a class="text-link" href="#proyecto">Explorar el proyecto <span>↗</span></a></div>
+    </section>
+
+    <!-- SECCION AMENITIES -->
+<section id="amenities" class="section-space pt-0">
+    <div class="container-fluid page-gutter">
+        <p class="eyebrow">AMENITIES</p>
+        <div class="row g-3 g-lg-4"><div class="col-6 col-lg-3"><article class="card amenity-card">
+            <img src="Resources/Amenities1v3.webp" alt="Interior con grandes ventanales" class="" loading="lazy"><div class="card-body px-0">
+                <h3>Residencias</h3>
+                <p>Espacios para imaginar una nueva forma de habitar.</p>
+            </div>
+        </article>
+    </div>
+    <div class="col-6 col-lg-3">
+        <article class="card amenity-card">
+            <img src="Resources/Amenities2v3.webp" alt="Torre en el paisaje urbano" class="" loading="lazy">
+            <div class="card-body px-0">
+                <h3>Arquitectura</h3>
+                <p>Una mirada vertical sobre la ciudad.</p>
+            </div>
+        </article>
+    </div>
+    <div class="col-6 col-lg-3">
+        <article class="card amenity-card">
+            <img src="Resources/Amenities3v3.webp" alt="Piscina cubierta de la referencia" class="" loading="lazy">
+            <div class="card-body px-0">
+                <h3>Bienestar</h3>
+                <p>Ambientes que inspiran calma y descanso.</p>
+            </div>
+        </article>
+    </div>
+    <div class="col-6 col-lg-3">
+        <article class="card amenity-card">
+            <img src="Resources/Amenities4.webp" alt="Hall de doble altura de la referencia" class="" loading="lazy">
+            <div class="card-body px-0">
+                <h3>Encuentro</h3>
+                <p>Lugares que invitan a compartir el día a día.</p>
+            </div>
+        </article>
+    </div>
+</div>
+</div>
+</section>
+
+<!-- SECCION PROYECTO -->
+<section id="proyecto" class="tone-section section-space">
+    <div class="container-fluid page-gutter">
+        <div class="row g-4 g-lg-5 align-items-center">
+
+            <div class="col-12 col-lg-6">
+                <video id="video-proyecto" class="video-proyecto" controls muted loop playsinline preload="metadata"
+                    aria-label="Video de finalización de Harbour Tower">
+
+                    <source src="Resources/HarbourFinalizacion.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="col-12 col-lg-6 proyecto-texto">
+                <p class="eyebrow">PROYECTO</p>
+
+                <h2>Finalización 2026</h2>
+
+                <p>
+                    La torre de 192 metros de altura se encuentra en el Dique 1
+                    de Puerto Madero, dentro del distrito Madero Harbour.
+                    Es un emprendimiento de GNV Group y el diseño corresponde
+                    al prestigioso Arq. Carlos Ott.
+                </p>
+
+                <p>
+                    Cada detalle de Harbour Tower fue desarrollado para garantizar
+                    que sus 217 residencias tengan vistas panorámicas, luminosidad
+                    y amplitud en todos sus espacios. El número de esquinas y sus
+                    plantas desiguales permiten que cada una de sus viviendas sea
+                    única e irrepetible.
+                </p>
+
+                <p>
+                    Carlos Ott acumula más de cuarenta años de excepcional
+                    experiencia en el diseño y construcción de proyectos
+                    arquitectónicos. Diseñó y dirigió proyectos de gran escala
+                    en los campos de la arquitectura de vanguardia. Su trabajo
+                    ha recibido numerosos galardones y reconocimientos a nivel
+                    internacional.
+                </p>
+
+                <a class="text-link" href="#experiencia">
+                    Descubrir más <span>↗</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ARQUITECTURA -->
+
+<section class="section-space">
+    <div class="container-fluid page-gutter">
+        <h2 class="display-title">198 metros de excelencia constructiva</h2>
+        <a href="#contacto" class="text-link mb-5">Consultar <span>↗</span></a>
+        <img src="Resources/Proyecto1.webp" alt="Panorama urbano de la referencia" class="panorama w-100" loading="lazy"></div></section>
+<section class="tone-section"><div class="container-fluid page-gutter">
+ <div class="row g-0 align-items-center feature-row">
+    <div class="col-md-6 order-2 order-md-1 feature-copy">
+        <p class="eyebrow">ARQUITECTURA</p>
+        <h2>Carlos Ott.</h2>
+        <p>En 1983 fundó en Toronto, Canadá, su propio estudio y desde entonces expandió su tarea a Europa, Oriente Medio, Asia y
+        América del Sur. Su firma forma parte de un consorcio internacional cuyos recursos incluyen arquitectos, diseñadores y
+        un amplio staff interdisciplinario.
+</p>
+    <p>Por casi 60 años de historia, la amplia producción de este estudio abarca una variada gama de programas y escalas:
+    edificios públicos, edificios de oficinas, viviendas, hoteles, industrias y grandes reciclajes en Argentina, España,
+    Angola, Senegal, Brasil, Paraguay, Uruguay, Chile y el Territorio Antártico. Varias de sus obras y su reconocida
+    trayectoria han sido merecedoras de destacados premios.
+</p>
+<p>A través de los años, se ha ido consolidado como empresa constructora líder a nivel internacional. Asumiendo en cada
+oportunidad, el desafío de ejecutar trabajos de alta exigencia en lo que respecta a plazos, localizaciones y soluciones
+constructivas. Una empresa con trayectoria, capacidad y respaldo.</p>
+
+        <a class="text-link" href="#contacto">Conocer más <span>↗</span></a></div><div class="col-md-6 order-1 order-md-2">
+            <img src="Resources/Arquitectura.avif" alt="Lobby de la referencia" class="feature-photo" loading="lazy"></div></div>
+ <div class="row g-0 align-items-center feature-row"><div class="col-md-6">
+    <img src="Resources/Amenities6.webp" alt="Espacio deportivo de la referencia" class="feature-photo" loading="lazy"></div>
+    <div class="col-md-6 feature-copy">
+        <p class="eyebrow">BIENESTAR</p>
+        <h2>Tiempo para vos.<br>Espacio para disfrutar.</h2>
+        <p>El bienestar también se expresa en el diseño. Los materiales, las proporciones y la iluminación aportan una atmósfera serena a esta presentación, pensada para explorar los espacios con atención.</p>
+        <a class="text-link" href="#experiencia">Explorar <span>↗</span></a></div></div>
+</div></section>
+<section class="section-space"><div class="container-fluid page-gutter"><h2 class="display-title">La energía de la ciudad.<br>La calma de tu lugar.</h2>
+    <a class="text-link mb-5" href="#contacto">Conocer más. <span>↗</span></a><div class="row g-4 align-items-start">
+        <div class="col-3">
+    <img src="Resources/Amenities7.webp" alt="Parque de la referencia" class="w-100" loading="lazy"></div><div class="col-9">
+        <img src="Resources/Amenities8.webp" alt="Vista de la ciudad de la referencia" class="w-100" loading="lazy"></div></div></div></section>
+<section id="experiencia" class="section-space tone-section"><div class="container-fluid page-gutter"><div class="row g-5 align-items-center"><div class="col-lg-4"><p class="eyebrow">EXPERIENCIA</p>
+    <h2>Conocé<br>Harbour Tower.</h2>
+    <p>El video suma movimiento a este recorrido por el proyecto. Es una invitación a descubrir sus perspectivas narradas por sus constructores íntimos.</p></div>
+    <div class="col-lg-8"><div class="ratio ratio-16x9"><video controls preload="metadata" playsinline><source src="Resources/HarbourTowerLong.mp4" type="video/mp4">Tu navegador no admite video HTML5.</video></div></div></div></div></section>
+<section id="contacto" class="section-space">
+    <div class="container-fluid page-gutter">
+        <div class="row g-5"><div class="col-lg-5"><p class="eyebrow">CONTACTO</p>
+    <h2 clas>Consulte por <br> nuestra financión.</h2>
+    <p>Concrete su visita a nuestro showroom.</p></div><div class="col-lg-7">
     
-        <section class="bloque-hero">
-            <!-- Contenedor principal relativo -->
-            <div class="hero-wrapper">
-        
-                <!-- IMAGEN -->
-                <picture class="hero-imagen">
-                    <!-- Desktop -->
-                    <source media="(min-width: 900px)" srcset="img/Backgroung-Hero-Desktop.avif">
-                    <!-- Tablet -->
-                    <source media="(min-width: 600px)" srcset="img/Background-Hero-Tablet.jpg">
-                    <!-- Mobile -->
-                    <img src="img/Background-Hero-Mobile.jpg" alt="Camp is calling - Mointses Outdoor">
-                </picture>
-        
-                <!--  BLOQUE TEXTO -->
-                <div class="hero-contenido">
-                    <h1>EXPLORATION IS<br>OUR OXYGEN</h1>
-                    <p>Gear up with the best outdoor apparel. Head out into nature with Mointses and discover just how far
-                    you can go.</p>
-                    <a href="https://www.amazon.com/" target="_blank" class="btn-primario">SHOP NOW</a>
+    <!-- Configuracion mail -->
+
+
+    <form action="https://formsubmit.co/caleroceleste@protonmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://caleroceleste.github.io/harbour-tower">
+        <input type="hidden" name="_subject" value="Nueva consulta desde Harbour Tower">
+    <div class="row g-4">
+        <div class="col-md-6">
+            <label for="nombre" class="form-label">Nombre</label><input id="nombre" name="nombre" autocomplete="given-name" class="form-control" required>
+        </div>
+        <div class="col-md-6">
+            <label for="apellido" class="form-label">Apellido</label><input id="apellido" name="apellido" autocomplete="family-name" class="form-control" required></div>
+            <div class="col-12">
+                <label for="email" class="form-label">Email</label><input id="email" name="email" type="email" autocomplete="email" class="form-control" required></div>
+                <div class="col-12">
+                    <label for="comentario" class="form-label">Comentario</label><textarea id="comentario" name="comentario" rows="4" class="form-control" required></textarea></div>
+                    <div class="col-12">
+                        <button class="btn btn-outline-dark rounded-0 px-4" type="submit">Enviar consulta ↗</button>
+                    </div>
                 </div>
-        
+            </form>
+        </div>
+    </div>
+</div>
+</section>
+</main>
+<footer class="tone-section">
+    <div class="container-fluid page-gutter">
+        <div class="row g-4 justify-content-between">
+            <div class="col-md-5">
+                <a href="#inicio" class="brand footer-brand">
+                    HARBOUR<span>TOWER
+                    </span>
+                </a>
+                <p class="small mt-4">Copyright Grupo GNV Group | © Todos los derechos reservados. <br>Las imágenes, fotografías, render, viñetas y los productos
+                exhibidos son ilustrativos y de referencia, con proporciones aproximadas, todo ello a modo representativo y no
+                implica ninguna obligación contractual.
+                </p>
             </div>
-        </section>
-
-        <!-- BLOQUE 2: 4 Pastillas-->
-        <section class="bloque-pastillas">
-            <div class="contenedor">
-                <h2>Pathways to Adventure</h2>
-                <div class="grid-adventure">
-                    <article class="card-adventure">
-                        <picture>
-                            <!-- Desktop -->
-                            <source media="(min-width: 900px)" srcset="img/CardInspiration Desktop.jpg">
-                            <!-- Tablet -->
-                            <source media="(min-width: 600px)" srcset="img/CardInspirationTablet.jpg">
-                            <!-- Mobile -->
-                            <img src="img/CardInspirationMobile.jpg" alt="Persona en sendero">
-                        </picture>
-                        <div class="card-overlay">
-                            <h3>Inspiration</h3>
+            <div class="col-md-4">
+                <p class="small">Celeste Calero<br>Maquetado y Desarrollo Web<br>Comisión DMM2AP · Turno mañana · 16 de Noviembre 2026</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <img src="Resources/instagram.svg" alt="Instagram"></a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <img src="Resources/linkedin.svg" alt="LinkedIn"></a>
+                            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                                <img src="Resources/youtube.svg" alt="YouTube"></a>
+                            </div>
                         </div>
-                    </article>
-                    <article class="card-adventure">
-                        <picture>
-                            <!-- Desktop -->
-                            <source media="(min-width: 900px)" srcset="img/CardTentDesktop.jpg">
-                            <!-- Tablet -->
-                            <source media="(min-width: 600px)" srcset="img/CardTendTablet.jpg">
-                            <!-- Mobile -->
-                            <img src="img/CardTentMobile.jpg" alt="Personas acampando">
-                        </picture>
-                        <div class="card-overlay">
-                            <h3>Camping by Type</h3>
-                        </div>
-                    </article>
-                    <article class="card-adventure">
-                        <picture>
-                            <!-- Desktop -->
-                            <source media="(min-width: 900px)" srcset="img/CardDestinationDesktop.jpg">
-                            <!-- Tablet -->
-                            <source media="(min-width: 600px)" srcset="img/CardDestinationTablet.jpg">
-                            <!-- Mobile -->
-                            <img src="img/CardDestinationMobile.jpg" alt="Alpinistas">
-                        </picture>
-                        <div class="card-overlay">
-                            <h3>Destinations</h3>
-                        </div>
-                    </article>
-                    <article class="card-adventure">
-                        <picture>
-                            <!-- Desktop -->
-                            <source media="(min-width: 900px)" srcset="img/CardRepairDesktop.jpg">
-                            <!-- Tablet -->
-                            <source media="(min-width: 600px)" srcset="img/CardRepairTablet.jpg">
-                            <!-- Mobile -->
-                            <img src="img/CardRepairMobile.jpg" alt="Reparación de equipamiento">
-                        </picture>
-                        <div class="card-overlay">
-                            <h3>Gear Care & Repair</h3>
-                        </div>
-                    </article>
                 </div>
-            </div>
-        </section>
-
-        <!-- BLOQUE 3: SECTION-->
-        <section class="bloque-filosofia">
-            <div class="contenedor grid-filosofia">
-                <div class="filosofia-imagen">
-                    <picture>
-                        <!-- Desktop -->
-                        <source media="(min-width: 900px)" srcset="img/WhoWeAreDesktop.jpg">
-                        <!-- Tablet -->
-                        <source media="(min-width: 600px)" srcset="img/WhoWeAreTablet.webp">
-                        <!-- Mobile -->
-                        <img src="img/WhoWeAreMobile.jpg" alt="Camp is calling - Mointses Outdoor">
-                    </picture>
-                </div>
-                <div class="filosofia-texto">
-                    <h2>The goal of Endless Promise® is to keep our gear out of the landfill.</h2>
-                    <p>At Mointses, we understand that nature is our one true home. That is why we design outdoor gear and apparel not only to
-                    withstand the most extreme weather conditions but also to protect the ecosystems we love to explore.</p>
-                    <p>Our Endless Promise initiative stems from the urgent need to change how we consume and produce within the textile
-                    industry. We do not want our garments ending up in landfills after just a few seasons of use.</p>
-                    <p>Every jacket, tent, and backpack we manufacture is conceived based on circular economy principles. We use high-tech
-                    recycled materials that ensure waterproofing, warmth, and breathability without compromising mountain performance.</p>
-                    <p>But sustainability goes beyond materials. We actively encourage the repair of our gear. We believe a patched garment
-                    tells a story of adventure, effort, and respect for the planet's resources.</p>
-                    <p>Our design team works daily with athletes and mountain guides to put every prototype to the test. This constant feedback
-                    ensures that every seam is perfectly placed and serves a vital function.</p>
-                    <p>By choosing Mointses, you are not just preparing for your next summit; you are joining a global community of adventurers
-                    committed to leaving the trails better than we found them. Adventure calls—let us answer responsibly.</p>
-                    <a href="https://es.wikipedia.org/wiki/Mois%C3%A9s" target="_blank" class="btn-secundario">LEARN MORE</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- BLOQUE 4: Sponsors Mointses -->
-        <section class="bloque-resenas-dark">
-            <div class="contenedor">
-                <h2>Our Athletes</h2>
-                <div class="grid-resenas">
-                    <article class="dark-card">
-                        <img src="img/stefano-ghisolf1.webp" alt="Foto de Stefano Ghisolfi" class="foto-sponsor">
-                        <div class="resena-info">
-                            <p>"Stefano Ghisolfi chose La Capella (5.15b) in Siurana, Spain and when he completed the route on January 12, 2018, the 25-year-old Italian joined the upper echelon of climbing."</p>
-                            <h4>Stefano Ghisolfi</h4>
-                        </div>
-                    </article>
-
-                    <article class="dark-card">
-                        <img src="img/AngieScarthJohnson.webp" alt="Foto de Angie Scarth-Johnson" class="foto-sponsor">
-                        <div class="resena-info">
-                            <p>"Angie started climbing at her seven years old, by nine she’d set the record as the youngest person to
-                            ever lead a 8b/5.13d climb – ‘Swingline’ at Red River Gorge, USA."</p>
-                            <h4>Angie Scarth-Johnson</h4>
-                        </div>
-                    </article>
-
-                    <article class="dark-card">
-                        <img src="img/IanMacintosh.webp" alt="Foto de Ian MacIntosh" class="foto-sponsor">
-                        <div class="resena-info">
-                            <p>"Ian McIntosh “combines aggressive fall-line skiing with a high-speed air presence,
-                            launching 50-foot cliffs and powerfully punching down 60-degree terrain."</p>
-                            <h4>Ian Macintosh</h4>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- FOOTER: Iconos Globales -->
-    <footer class="footer-mointses">
-        <div class="contenedor">
-            <!-- Iconos de marca -->
-            <div class="footer-promesas">
-                <div class="promesa">
-                    <img src="img/Warranty-01.svg" alt="Garantía">
-                    <p>We guarantee our work.</p>
-                </div>
-                <div class="promesa">
-                    <img src="img/jacket-01.svg" alt="Reparación">
-                    <p>We keep your equipment running.</p>
-                </div>
-                <div class="promesa">
-                    <img src="img/planet earth-01.svg" alt="Impacto">
-                    <p>We take responsibility for our impact.</p>
-                </div>
-                <div class="promesa">
-                    <img src="img/Donation-01.svg" alt="Donación">
-                    <p>We donate our profits to the planet.</p>
-                </div>
-            </div>
-
-            <!--Alumna y Redes Sociales -->
-            <div class="footer-legal-academico">
-                <div class="datos-parcial">
-                    <p><strong>Alumna:</strong> Calero Celeste</p>
-                    <p>Maquetado y Desarrollo Web | Comisión: DMM2AP | Turno: Mañana | Año: 2026</p>
-                </div>
-                <div class="redes-mointses">
-                    <a href="https://instagram.com" target="_blank"><img src="img/instagram.svg" alt="Instagram"></a>
-                    <a href="https://facebook.com" target="_blank"><img src="img/facebook.svg" alt="Facebook"></a>
-                    <a href="https://youtube.com" target="_blank"><img src="img/youtube.svg" alt="YouTube"></a>
-                </div>
+            <div class="footer-bottom">
+                <span>Harbour Tower</span>
+                <a href="#inicio">Volver arriba ↑</a>
             </div>
         </div>
-    </footer>
-
-</body>
-
-</html>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body></html>
